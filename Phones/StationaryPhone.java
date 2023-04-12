@@ -1,6 +1,6 @@
 package Phones;
 
-public class StationaryPhone extends Phone implements Call{
+public class StationaryPhone extends Phone implements Standard{
 
     public StationaryPhone(String producer, String color) {
         super(producer, color);
@@ -25,5 +25,5 @@ public class StationaryPhone extends Phone implements Call{
     public void getDisconnected() {
         System.out.println("Соединение прервано");;
     }
-    
+
 }

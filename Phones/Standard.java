@@ -1,6 +1,6 @@
 package Phones;
 
-public interface Call {
+public interface Standard {
     void ring();
     void dial();
     void getConnected();

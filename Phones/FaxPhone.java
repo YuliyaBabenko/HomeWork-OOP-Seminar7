@@ -1,21 +1,11 @@
 package Phones;
 
-public class CellPhone extends Phone implements Standard, SMS{
-    private String type;
+public class FaxPhone extends Phone implements Standard, Fax{
 
-    public CellPhone(String producer, String color, String type) {
+    public FaxPhone(String producer, String color) {
         super(producer, color);
-        this.type = type;
     }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
+    
     @Override
     public void ring() {
         System.out.println("Звонит");;
@@ -37,13 +27,13 @@ public class CellPhone extends Phone implements Standard, SMS{
     }
 
     @Override
-    public void sendSMS() {
-        System.out.println("Отправляет смс");;
+    public void sendFax() {
+        System.out.println("Отправляет факс");;
     }
 
     @Override
-    public void getSMS() {
-        System.out.println("Получает смс");;
+    public void getFax() {
+        System.out.println("Получает факс");;
     }
     
 }
